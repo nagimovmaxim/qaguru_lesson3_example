@@ -8,19 +8,7 @@ import static com.codeborne.selenide.Configuration.*;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
 
-public class TextBoxTests {
-
-    @BeforeAll
-    static void setUp(){
-        headless = true;
-        browserSize = "2560x1440";
-        browser = "chrome";
-        browserVersion = "latest";
-        baseUrl = "https://demoqa.com";
-        //pageLoadStrategy = "eager";
-        timeout = 10000;
-
-    }
+public class TextBoxTests extends TestBase{
 
     @Test
     void successfulFillFormTest(){
